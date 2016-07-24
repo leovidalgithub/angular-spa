@@ -40,7 +40,7 @@ header {
             align-items: center; }
   header .logo {
     color: #A5A5A5;
-    font-size: 2vw;
+    font-size: 24px;
     font-weight: bold;
     margin-left: 40px; }
     header .logo:hover {
@@ -48,8 +48,8 @@ header {
       margin-left: 45px;
       cursor: pointer; }
   header a {
-    color: wheat;
-    font-size: 1.4vw;
+    color: white;
+    font-size: 18px;
     padding: 10px 20px;
     border-radius: 50px; }
     header a:hover {
@@ -66,6 +66,9 @@ header {
     margin-top: 0;
     margin-bottom: 30px;
     color: #4C4B4B; }
+
+section form {
+  margin: 0; }
 
 main {
   background-color: white;
@@ -98,16 +101,26 @@ form {
   text-align: center;
   margin-bottom: 20px; }
 
-#serachInput {
-  width: 450px; }
+@media screen and (max-width: 1060px) {
+  header {
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding: 15px; } }
 
 @media screen and (max-width: 830px) {
-  header, header nav {
+  header nav {
     -webkit-flex-flow: column nowrap;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap; }
   header .logo {
+    font-size: 21px;
     margin-left: 0;
-    margin-bottom: 15px; } }
-
-/*@media screen and (max-width: 1199px) and (min-width: 587px) {  /* entre 587 y 1199 */
+    margin-bottom: 15px; }
+  header a {
+    font-size: 15px;
+    padding: 5px; }
+  .container {
+    margin-top: 200px; }
+  h1 {
+    font-size: 22px; } }

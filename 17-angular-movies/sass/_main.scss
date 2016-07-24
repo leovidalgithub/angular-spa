@@ -4,7 +4,6 @@ body {
 }
 
 header {
-	// height: 90px;
 	width: 100%;
 	padding: 35px;
 	background-color: black;
@@ -20,8 +19,6 @@ header {
 		flex-flow: row wrap;
 		justify-content: center;
 		align-items: center;
-
-
 	}
    .logo {
 	    color: #A5A5A5;
@@ -35,9 +32,8 @@ header {
 	    }
 	}
 	a {
-		// margin-right: 15px;
-		color: wheat;
-	    font-size: $tamanoLetraHeader2;
+		color: white;
+	    font-size: $tamanoLetraHeader - 6;
 	    padding: 10px 20px;
 	    border-radius: 50px;
         &:hover{
@@ -59,7 +55,10 @@ header {
 		margin-bottom: 30px;
 		color: #4C4B4B;
 	}
+}
 
+section form {
+	margin: 0;
 }
 
 // .inactiveLink {

@@ -9,3 +9,7 @@
 
     cuando se navega entre los templates la página nunca se recarga, simplemente cambia de uno a otro, por lo tanto, los posibles cambios no se ven.
 
+
+    en github gh-pages no funciona
+
+    
