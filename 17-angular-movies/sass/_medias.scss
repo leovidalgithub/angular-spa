@@ -1,0 +1,14 @@
+@media screen and (max-width: 830px) {
+	header, header nav {
+			flex-flow: column nowrap;
+	}
+	header .logo {
+		margin-left: 0;
+		margin-bottom: 15px;
+	}
+}
+
+/*@media screen and (max-width: 1199px) and (min-width: 587px) {  /* entre 587 y 1199 */
+
+
+
