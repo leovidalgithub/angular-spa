@@ -2,7 +2,7 @@ angular.module( 'mainControllers', [] )
 
 	.controller( 'indexController', function( $scope, $location ) { // INDEX
 		$scope.home = function() {
-			$location.path('/home');
+			$location.path('/upcoming');
 		}
 	})
 

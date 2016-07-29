@@ -1,0 +1,14 @@
+<div class="jumbotron">
+	<div class="container">
+		<h2> HOME HOME </h2>
+		<p>We are at {{ section }}</p>
+		<ul>
+			<li ng-repeat="phone in phones">
+				<a ng-href="#/product/{{phone.id}}">{{phone.name}}</a>
+			</li>
+		</ul>
+		<p>
+			<a class="btn btn-primary btn-lg" href="#/about">Go to ABOUT</a>
+		</p>
+	</div>
+</div>

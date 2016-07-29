@@ -33,10 +33,11 @@ angular.module('appConfig', ['ngRoute'])
 	.factory('appFactory', function( $http ) {
 	
 		function apiResult( apiType ) {
-			var urlApi = 'https://api.themoviedb.org/3/movie/' + apiType + '?api_key=1f3be3a60c163ba631dc4e863ef5fb77';
+			var internetProtocol = window.location.protocol; // depende de si es un servidor seguro
+			internetProtocol = ( internetProtocol == 'http:' ) ? 'http' : 'https';
+			var urlApi = internetProtocol + '://api.themoviedb.org/3/movie/' + apiType + '?api_key=1f3be3a60c163ba631dc4e863ef5fb77';
 			return $http.get( urlApi )
 		}
-
 		return {
 			apiResult: apiResult
 		}
